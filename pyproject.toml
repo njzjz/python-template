@@ -62,5 +62,10 @@ required-imports = [
     "from __future__ import annotations",
 ]
 
+[tool.ruff.lint.extend-per-file-ignores]
+"tests/**/*.py" = [
+    "S101", # asserts allowed in tests...
+]
+
 [tool.coverage.report]
 include = ["python_template/*"]  # Please revise this line.
