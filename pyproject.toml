@@ -6,7 +6,7 @@ requires = [
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "python_template"  # Please revise this line.
+name = "python-template"  # Please revise this line.
 dynamic = ["version"]
 description = "A Python template."  # Please revise this line.
 authors = [
@@ -45,6 +45,7 @@ test = [
 include = ["python_template*"]  # Please revise this line.
 
 [tool.setuptools_scm]
+version_file = "python_template/_version.py"  # Please revise this line.
 
 [tool.ruff.lint]
 select = [
