@@ -16,6 +16,9 @@ jobs:
         uses: astral-sh/setup-uv@v3
         with:
           enable-cache: true
+          cache-dependency-glob: |
+            **/requirements*.txt
+            **/pyproject.toml
       - name: Build dist
         run: uv tool run --with build[uv] --from build python -m build --installer uv
       - name: Upload release distributions
