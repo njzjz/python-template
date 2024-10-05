@@ -8,8 +8,6 @@ on:
 
 env:
   UV_SYSTEM_PYTHON: 1
-  # Configure a constant location for the uv cache
-  UV_CACHE_DIR: /tmp/.uv-cache
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -26,7 +24,9 @@ jobs:
             **/requirements*.txt
             **/pyproject.toml
       - name: Set up Python
-        run: uv python install 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: 3.12
       - name: Install dependencies
         run: uv pip install nox[uv]
       - name: Test with pytest
