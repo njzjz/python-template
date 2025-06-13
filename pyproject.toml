@@ -10,7 +10,7 @@ name = "python-template"  # Please revise this line.
 dynamic = ["version"]
 description = "A Python template."  # Please revise this line.
 authors = [
-    { name = "Jinzhe Zeng", email = "jinzhe.zeng@rutgers.edu"},
+    { name = "Jinzhe Zeng", email = "jinzhe.zeng@ustc.edu.cn"},
 ]
 license = { file = "LICENSE" }
 classifiers = [
