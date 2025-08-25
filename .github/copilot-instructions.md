@@ -4,6 +4,23 @@ This is a Python template project for creating new Python packages quickly. It u
 
 Always reference these instructions first and fallback to search or bash commands only when you encounter unexpected information that does not match the info here.
 
+## Repository Standards
+
+### Conventional Commits and PR Titles
+
+This repository follows [Conventional Commits](https://www.conventionalcommits.org/) specification:
+
+- **PR titles** must follow the pattern: `type(scope): description`
+- **Commit messages** should also follow conventional commit format
+- Common types: `feat`, `fix`, `docs`, `style`, `refactor`, `test`, `chore`, `ci`, `build`, `perf`
+- Examples:
+  - `docs: add GitHub Copilot instructions`
+  - `chore(deps): update dependency python to 3.13`
+  - `feat: add new validation function`
+  - `fix: resolve version import issue`
+
+Always use conventional commit format for both PR titles and commit messages when working in this repository.
+
 ## Working Effectively
 
 ### Bootstrap and Install Dependencies
