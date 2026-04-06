@@ -12,7 +12,8 @@ description = "A Python template."  # Please revise this line.
 authors = [
     { name = "Jinzhe Zeng", email = "jinzhe.zeng@ustc.edu.cn"},
 ]
-license = { file = "LICENSE" }
+license = "LGPL-3.0-or-later"
+license-files = ["LICENSE"]
 classifiers = [
     "Programming Language :: Python :: 3.9",
     "Programming Language :: Python :: 3.10",
@@ -21,7 +22,6 @@ classifiers = [
     "Operating System :: POSIX :: Linux",
     "Operating System :: MacOS :: MacOS X",
     "Operating System :: Microsoft :: Windows",
-    "License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)",
 ]
 dependencies = [
 ]
